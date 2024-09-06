@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Chat Box </title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUqj20xN_Fioe1Eym8Le6xfxZgWX9jr6RiKQ&s);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #f0f0f0; 
+        margin: 0;
+        padding: 20px;
+    }
+
+    .chat-box {
+        max-width: 400px;
+        margin: 20px auto;
+    
+    
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .message {
+        padding: 10px 20px;
+        border-bottom: 1px solid #eee;
+        position: relative;
+    }
+
+    .message:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .message .text {
+        color: hsla(217, 24%, 93%, 0.96);
+        display: inline-block; 
+    }
+
+    .message.sent .text {
+        background-color: #0fd4d7;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .message.received .text {
+        background-color: #0b54e5;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .message.sent .text:before {
+        content: "";
+        border-style: solid;
+        border-width: 0 10px 10px 0;
+        border-color: transparent #DCF8C6 transparent transparent;
+        position: absolute;
+        top: 0;
+        left: -8px;
+    }
+
+    .message.received .text:after {
+        content: "";
+        border-style: solid;
+        border-width: 10px 10px 0 0;
+        border-color: #E0E0E0 transparent transparent transparent;
+        position: absolute;
+        top: 0;
+        right: -8px;
+    }
+</style>
+</head>
+<body>
+
+<div class="chat-box">
+    <div class="message received">
+        <span class="text">Hello, how are you?</span>
+    </div>
+    <div class="message sent">
+        <span class="text">Hi Varankumar, I am good. How are you?</span>
+    </div>
+    <div class="message received">
+        <span class="text">I'm fine. I am learning HTML and CSS.</span>
+    </div>
+    <div class="message sent">
+        <span class="text">HTML and CSS?</span>
+    </div>
+    <div class="message received">
+        <span class="text">Yes, I am learning it by doing projects in parallel.</span>
+    </div>
+    <div class="message sent">
+        <span class="text">Awesome, can you tell me how you are learning it?</span>
+    </div>
+    <div class="message received">
+        <span class="text">Can I call you?</span>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
